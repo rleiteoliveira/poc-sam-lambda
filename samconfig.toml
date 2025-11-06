@@ -28,3 +28,15 @@ warm_containers = "EAGER"
 
 [default.local_start_lambda.parameters]
 warm_containers = "EAGER"
+
+[hml.deploy.parameters]
+stack_name = "minha-poc-teste-lambda"
+region = "us-east-1"
+capabilities = "CAPABILITY_IAM"
+image_repositories = []
+
+s3_bucket = "testnimbloo"
+s3_prefix = "minha-poc-teste-lambda"
+
+[hml.global.parameters]
+region = "us-east-1"
